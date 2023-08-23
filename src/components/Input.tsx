@@ -19,7 +19,10 @@ const InputField = ({ evolutionChain, setEvolutionChain, setIsLoading }) => {
       );
       setEvolutionChain(transformedEvolutionChain);
       setIsLoading(false);
-      console.log(evolutionChain);
+      console.log(
+        JSON.stringify(transformedEvolutionChain),
+        '<<< the transformed evolution chain'
+      );
     } catch (e) {
       console.log(e);
     }
